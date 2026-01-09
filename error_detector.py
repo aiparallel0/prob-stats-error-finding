@@ -45,7 +45,8 @@ class ErrorDetector:
         if enable_turkish:
             try:
                 from turkish_grammar import TurkishGrammarChecker
-                self.turkish_checker = TurkishGrammarChecker(config.get('turkish_rules', {}))
+                turkish_config = config.get('turkish_rules', {}) if config else {}
+                self.turkish_checker = TurkishGrammarChecker(turkish_config)
                 print("Turkish grammar checker enabled")
             except Exception as e:
                 print(f"Warning: Turkish grammar checking disabled. Error: {e}")
