@@ -38,3 +38,7 @@ error_reports/
 # Temporary files
 tmp/
 *.tmp
+
+# Test PDFs (optional - remove this line if you want to commit test PDFs)
+books/test_*.pdf
+create_test_pdf.py

@@ -8,17 +8,19 @@ import json
 import argparse
 from datetime import datetime
 from pathlib import Path
+from typing import Dict
 from pdf_extractor import PDFExtractor
 from error_detector import ErrorDetector
 
 
-def scan_pdf(pdf_path: str, output_dir: str = 'error_reports') -> Dict[str, any]:
+def scan_pdf(pdf_path: str, output_dir: str = 'error_reports', enable_grammar: bool = True) -> Dict[str, any]:
     """
     Scan a PDF file for errors page by page.
     
     Args:
         pdf_path: Path to the PDF file
         output_dir: Directory to save error reports
+        enable_grammar: Whether to enable grammar checking
         
     Returns:
         Dictionary containing scan results
@@ -29,7 +31,7 @@ def scan_pdf(pdf_path: str, output_dir: str = 'error_reports') -> Dict[str, any]
     
     # Initialize extractor and detector
     extractor = PDFExtractor(pdf_path)
-    detector = ErrorDetector()
+    detector = ErrorDetector(enable_grammar_check=enable_grammar)
     
     # Get page count
     page_count = extractor.get_page_count()
@@ -170,13 +172,14 @@ def save_report(results: Dict[str, any], output_dir: str):
     print(f"Summary saved to: {summary_path}")
 
 
-def scan_directory(directory: str, output_dir: str = 'error_reports'):
+def scan_directory(directory: str, output_dir: str = 'error_reports', enable_grammar: bool = True):
     """
     Scan all PDF files in a directory.
     
     Args:
         directory: Directory containing PDF files
         output_dir: Directory to save error reports
+        enable_grammar: Whether to enable grammar checking
     """
     pdf_files = list(Path(directory).glob('*.pdf'))
     
@@ -187,7 +190,7 @@ def scan_directory(directory: str, output_dir: str = 'error_reports'):
     print(f"Found {len(pdf_files)} PDF file(s) to scan\n")
     
     for pdf_file in pdf_files:
-        scan_pdf(str(pdf_file), output_dir)
+        scan_pdf(str(pdf_file), output_dir, enable_grammar)
         print()
 
 
@@ -226,6 +229,12 @@ Examples:
         help='Output directory for error reports (default: error_reports)'
     )
     
+    parser.add_argument(
+        '--no-grammar',
+        action='store_true',
+        help='Disable grammar checking (useful for offline mode or faster scanning)'
+    )
+    
     args = parser.parse_args()
     
     # Check if we have either a file or directory
@@ -234,13 +243,15 @@ Examples:
         sys.exit(1)
     
     try:
+        enable_grammar = not args.no_grammar
+        
         if args.directory:
-            scan_directory(args.directory, args.output)
+            scan_directory(args.directory, args.output, enable_grammar)
         else:
             if not os.path.exists(args.pdf):
                 print(f"Error: File '{args.pdf}' not found")
                 sys.exit(1)
-            scan_pdf(args.pdf, args.output)
+            scan_pdf(args.pdf, args.output, enable_grammar)
     except KeyboardInterrupt:
         print("\n\nScan interrupted by user.")
         sys.exit(0)

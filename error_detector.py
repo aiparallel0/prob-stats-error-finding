@@ -2,17 +2,40 @@
 Error detection module for finding grammar, punctuation, and mathematical errors in text.
 """
 import re
-import language_tool_python
 from typing import List, Dict, Set
 
 
 class ErrorDetector:
     """Detect various types of errors in text."""
     
-    def __init__(self):
-        """Initialize the error detector with language tools."""
-        # Initialize LanguageTool for grammar and punctuation checking
-        self.language_tool = language_tool_python.LanguageTool('en-US')
+    def __init__(self, enable_grammar_check: bool = True):
+        """
+        Initialize the error detector with language tools.
+        
+        Args:
+            enable_grammar_check: Whether to enable grammar checking (requires internet on first run)
+        """
+        self.grammar_enabled = False
+        self.language_tool = None
+        self.simple_grammar = None
+        
+        if enable_grammar_check:
+            try:
+                import language_tool_python
+                self.language_tool = language_tool_python.LanguageTool('en-US')
+                self.grammar_enabled = True
+                print("Using LanguageTool for grammar checking")
+            except Exception as e:
+                # Fall back to simple grammar checker
+                try:
+                    from simple_grammar import SimpleGrammarChecker
+                    self.simple_grammar = SimpleGrammarChecker()
+                    self.grammar_enabled = True
+                    print("Using simple pattern-based grammar checker (LanguageTool unavailable)")
+                except Exception as e2:
+                    print(f"Warning: Grammar checking disabled. Error: {e}")
+                    print("The scanner will continue with mathematical error detection only.")
+                    self.grammar_enabled = False
         
         # Common mathematical symbols and patterns
         self.math_patterns = {
@@ -44,22 +67,30 @@ class ErrorDetector:
         """
         errors = []
         
+        if not self.grammar_enabled:
+            return errors
+        
         if not text or not text.strip():
             return errors
         
         try:
-            matches = self.language_tool.check(text)
-            
-            for match in matches:
-                errors.append({
-                    'type': 'grammar/punctuation',
-                    'message': match.message,
-                    'context': match.context,
-                    'offset': match.offset,
-                    'length': match.errorLength,
-                    'suggestions': match.replacements[:3],  # Top 3 suggestions
-                    'rule': match.ruleId
-                })
+            if self.language_tool:
+                # Use LanguageTool
+                matches = self.language_tool.check(text)
+                
+                for match in matches:
+                    errors.append({
+                        'type': 'grammar/punctuation',
+                        'message': match.message,
+                        'context': match.context,
+                        'offset': match.offset,
+                        'length': match.errorLength,
+                        'suggestions': match.replacements[:3],  # Top 3 suggestions
+                        'rule': match.ruleId
+                    })
+            elif self.simple_grammar:
+                # Use simple grammar checker
+                errors = self.simple_grammar.check(text)
         except Exception as e:
             print(f"Error during grammar check: {e}")
         
@@ -161,6 +192,7 @@ class ErrorDetector:
     def close(self):
         """Clean up resources."""
         try:
-            self.language_tool.close()
+            if self.language_tool:
+                self.language_tool.close()
         except:
             pass
