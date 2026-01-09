@@ -2,7 +2,7 @@
 Error detection module for finding grammar, punctuation, and mathematical errors in text.
 """
 import re
-from typing import List, Dict, Set
+from typing import List, Dict
 
 
 class ErrorDetector:
@@ -36,15 +36,6 @@ class ErrorDetector:
                     print(f"Warning: Grammar checking disabled. Error: {e}")
                     print("The scanner will continue with mathematical error detection only.")
                     self.grammar_enabled = False
-        
-        # Common mathematical symbols and patterns
-        self.math_patterns = {
-            'unmatched_parentheses': r'\([^()]*(?:\([^()]*\)[^()]*)*[^)]*$|^[^(]*\)',
-            'double_operators': r'[\+\-\*/]{2,}',
-            'malformed_fraction': r'\\frac(?!\{)',
-            'unmatched_brackets': r'\[[^\[\]]*(?:\[[^\[\]]*\][^\[\]]*)*[^\]]*$|^[^\[]*\]',
-            'unmatched_braces': r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*[^}]*$|^[^{]*\}',
-        }
         
         # Common mathematical error indicators
         self.math_error_keywords = [
