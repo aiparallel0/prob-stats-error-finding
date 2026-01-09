@@ -2,7 +2,7 @@
 PDF text extraction module for extracting text from PDF files page by page.
 """
 import pdfplumber
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 
 
 class PDFExtractor:
@@ -37,7 +37,7 @@ class PDFExtractor:
             print(f"Error extracting page {page_number}: {e}")
             return None
     
-    def extract_all_pages(self) -> List[Dict[str, any]]:
+    def extract_all_pages(self) -> List[Dict[str, Any]]:
         """
         Extract text from all pages in the PDF.
         

@@ -2,7 +2,7 @@
 Error detection module for finding grammar, punctuation, and mathematical errors in text.
 """
 import re
-from typing import List, Dict
+from typing import List, Dict, Any
 
 
 class ErrorDetector:
@@ -46,7 +46,7 @@ class ErrorDetector:
             'error',
         ]
     
-    def check_grammar_punctuation(self, text: str) -> List[Dict[str, any]]:
+    def check_grammar_punctuation(self, text: str) -> List[Dict[str, Any]]:
         """
         Check for grammar and punctuation errors.
         
@@ -87,7 +87,7 @@ class ErrorDetector:
         
         return errors
     
-    def check_mathematical_errors(self, text: str) -> List[Dict[str, any]]:
+    def check_mathematical_errors(self, text: str) -> List[Dict[str, Any]]:
         """
         Check for mathematical notation errors and inconsistencies.
         
@@ -165,7 +165,7 @@ class ErrorDetector:
         
         return errors
     
-    def check_all_errors(self, text: str) -> Dict[str, List[Dict[str, any]]]:
+    def check_all_errors(self, text: str) -> Dict[str, List[Dict[str, Any]]]:
         """
         Check for all types of errors.
         
@@ -185,5 +185,5 @@ class ErrorDetector:
         try:
             if self.language_tool:
                 self.language_tool.close()
-        except:
+        except (AttributeError, Exception):
             pass

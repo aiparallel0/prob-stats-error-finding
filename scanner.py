@@ -8,12 +8,12 @@ import json
 import argparse
 from datetime import datetime
 from pathlib import Path
-from typing import Dict
+from typing import Dict, Any
 from pdf_extractor import PDFExtractor
 from error_detector import ErrorDetector
 
 
-def scan_pdf(pdf_path: str, output_dir: str = 'error_reports', enable_grammar: bool = True) -> Dict[str, any]:
+def scan_pdf(pdf_path: str, output_dir: str = 'error_reports', enable_grammar: bool = True) -> Dict[str, Any]:
     """
     Scan a PDF file for errors page by page.
     
@@ -110,7 +110,7 @@ def scan_pdf(pdf_path: str, output_dir: str = 'error_reports', enable_grammar: b
     return results
 
 
-def save_report(results: Dict[str, any], output_dir: str):
+def save_report(results: Dict[str, Any], output_dir: str):
     """
     Save error report to a JSON file.
     

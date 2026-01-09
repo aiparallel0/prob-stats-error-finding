@@ -2,7 +2,7 @@
 Simple offline grammar and spelling checker using pattern matching.
 """
 import re
-from typing import List, Dict
+from typing import List, Dict, Any
 
 
 class SimpleGrammarChecker:
@@ -55,7 +55,7 @@ class SimpleGrammarChecker:
             'taht': 'that',
         }
     
-    def check(self, text: str) -> List[Dict[str, any]]:
+    def check(self, text: str) -> List[Dict[str, Any]]:
         """
         Check text for grammar and spelling errors.
         
@@ -80,7 +80,7 @@ class SimpleGrammarChecker:
                 
                 try:
                     suggestion = rule['suggestion'](match)
-                except:
+                except (TypeError, KeyError):
                     suggestion = ''
                 
                 errors.append({
