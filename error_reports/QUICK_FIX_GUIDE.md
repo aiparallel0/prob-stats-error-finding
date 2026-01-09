@@ -205,7 +205,7 @@ To fix the broken reference:
 
 After completing all fixes:
 
-1. **Run automated tools** (from PR #1) to verify fixes and find additional errors
+1. **Run automated tools** (scanner.py from the repository) to verify fixes and find additional errors
 2. **Manual review** of similar patterns in remaining sections
 3. **Test document compilation** if this is a LaTeX or formatted document source
 4. **Peer review** of mathematical content, especially probability axioms

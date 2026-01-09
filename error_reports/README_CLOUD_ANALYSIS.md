@@ -172,9 +172,9 @@ math_errors = [e for e in data['errors'] if e['error_type'] == 'mathematical']
 
 ## 🔧 Tools and Integration
 
-### Complementary Tools (from PR #1)
+### Complementary Tools (Available in Repository)
 
-This cloud-based analysis complements the local error detection tools:
+This cloud-based analysis complements the local error detection tools available in the repository:
 
 - **scanner.py** - Automated scanning with LanguageTool
 - **error_detector.py** - Mathematical and grammar error detection
@@ -183,7 +183,7 @@ This cloud-based analysis complements the local error detection tools:
 **Workflow:**
 1. Use these cloud-based reports for initial review
 2. Fix identified errors manually
-3. Run local automated tools to verify fixes and find additional errors
+3. Run local automated tools (scanner.py) to verify fixes and find additional errors
 4. Iterate until desired quality level achieved
 
 ### Integration Options
@@ -274,7 +274,7 @@ Examples:
 
 1. ✅ Fix 4 medium-severity errors (~15 minutes)
 2. ✅ Review similar sections for related errors
-3. ✅ Run automated tools from PR #1 for verification
+3. ✅ Run automated tools (scanner.py) for verification
 4. ✅ Document any corrections made
 
 ### Long-Term Actions (Before Publication)

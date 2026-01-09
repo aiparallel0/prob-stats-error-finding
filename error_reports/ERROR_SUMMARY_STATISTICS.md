@@ -234,7 +234,7 @@ Based on the error rate in the analyzed section:
 
 3. **Long Term** (Before Publication)
    - Complete analysis of remaining document sections
-   - Run automated error detection tools (see PR #1)
+   - Run automated error detection tools (scanner.py from the repository)
    - Professional proofreading review
 
 ---
