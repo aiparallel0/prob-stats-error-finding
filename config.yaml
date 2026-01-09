@@ -1,0 +1,87 @@
+# Configuration file for error detection
+# Customize error detection behavior and Turkish-specific rules
+
+# Enable/disable different error types
+error_types:
+  enable_grammar: true
+  enable_punctuation: true
+  enable_mathematical: true
+  enable_turkish_specific: true
+
+# Turkish language specific rules
+turkish_rules:
+  check_comma_spacing: true
+  check_spelling: true
+  check_word_errors: true
+  
+  # Common Turkish spelling and grammar errors
+  common_errors:
+    - pattern: "adalandırılan"
+      correction: "adlandırılan"
+      description: "Missing 'd' in Turkish word"
+    
+    - pattern: "olabilir farklı"
+      correction: "olası farklı"
+      description: "Inconsistent use of 'olabilir' vs 'olası'"
+    
+    - pattern: "\\bN is\\b"
+      correction: "N ise"
+      description: "English 'is' should be Turkish 'ise'"
+    
+    - pattern: ",([A-Za-zÇĞİÖŞÜçğıöşü])"
+      correction: ", \\1"
+      description: "Missing space after comma in Turkish"
+  
+  # Broken reference patterns
+  broken_references:
+    - pattern: "Örnek \\?\\?"
+      description: "Broken example reference"
+    
+    - pattern: "Şekil \\?\\?"
+      description: "Broken figure reference"
+    
+    - pattern: "Tablo \\?\\?"
+      description: "Broken table reference"
+
+# Mathematical error detection patterns
+mathematical_rules:
+  check_unmatched_brackets: true
+  check_notation_errors: true
+  check_split_equations: true
+  
+  # Specific mathematical notation errors
+  notation_errors:
+    - pattern: "A∪B\\s*=\\s*∅"
+      correction: "A∩B = ∅"
+      description: "Wrong union symbol - empty set suggests intersection"
+    
+    - pattern: "A∪B\\s*=\\s*\\{\\}"
+      correction: "A∩B = {}"
+      description: "Wrong union symbol - empty set suggests intersection"
+  
+  # Split equation number patterns
+  split_equation_patterns:
+    - pattern: "=\\s*\\(\\d+\\.\\d+$"
+      description: "Equation number split across lines"
+
+# Inconsistent spacing patterns
+spacing_rules:
+  check_multiple_spaces: true
+  check_space_before_punctuation: true
+  check_space_after_punctuation: true
+  
+  # Extra space/number patterns
+  extra_content:
+    - pattern: "\\s+\\d+\\s+(?=[A-Za-zÇĞİÖŞÜçğıöşü])"
+      description: "Extra space and number between words"
+
+# Report generation settings
+reporting:
+  include_line_numbers: true
+  include_context_lines: 2
+  max_context_chars: 80
+  group_by_error_type: true
+  export_formats:
+    - json
+    - markdown
+    - html
