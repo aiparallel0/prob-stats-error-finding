@@ -2,14 +2,17 @@
   "analysis_date": "2026-01-09",
   "source_file": "Olasılık Çözümlü Sorular.txt",
   "document_title": "Olasılık ve İstatistik: Çözümlü Örnek Problemler",
-  "authors": ["Prof. Dr. Ahmet Hamdi KAYRAN", "Dr. Erdoğan CAMCIOĞLU"],
+  "authors": [
+    "Prof. Dr. Ahmet Hamdi KAYRAN",
+    "Dr. Erdoğan CAMCIOĞLU"
+  ],
   "analysis_scope": {
     "start_line": 1,
     "end_line": 27330,
-    "description": "Extended analysis covering approximately pages 1-330 of the textbook"
+    "description": "Comprehensive analysis covering full document (29,557 lines)"
   },
-  "total_errors": 17,
-  "error_rate_per_100_lines": 0.06,
+  "total_errors": 25,
+  "error_rate_per_100_lines": 0.08,
   "errors": [
     {
       "error_id": 1,
@@ -224,21 +227,117 @@
       "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
       "chapter": "Chapter 11: Bayes Analizi",
       "page_estimate": 330
+    },
+    {
+      "error_id": 18,
+      "line_number": 1212,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "Pr M∣}}",
+      "correction": "Pr{M}",
+      "context": "Pr mavi top\n\nçekimi = Pr{M}= Pr{A∩M}+Pr M∣}}",
+      "explanation": "OCR/formatting error with misplaced brackets and symbols.",
+      "chapter": "Chapter 1: Giriş - Problemler",
+      "page_estimate": 35
+    },
+    {
+      "error_id": 19,
+      "line_number": 2988,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "Pr{A∩B∩}C}",
+      "correction": "Pr{A∩B∩C}",
+      "context": "Buna göre, Pr{A∩B∩}C} = Pr{A}Pr{B}Pr{C} koşulunun sağlandığı gösterilmelidir.",
+      "explanation": "Formatting error with misplaced closing brace in set notation.",
+      "chapter": "Chapter 2: Sayma Teknikleri - Problemler",
+      "page_estimate": 80
+    },
+    {
+      "error_id": 20,
+      "line_number": 2992,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "1)(A∩1)B( ∩1)",
+      "correction": "(1/2)(1/2)(1/2)",
+      "context": "Pr{A}Pr{B}Pr{C}= 1)(A∩1)B( ∩1) 1\n\n2 2 2 = 8",
+      "explanation": "Severe formatting error with misplaced parentheses and symbols in mathematical expression.",
+      "chapter": "Chapter 2: Sayma Teknikleri - Problemler",
+      "page_estimate": 80
+    },
+    {
+      "error_id": 21,
+      "line_number": 20778,
+      "error_type": "punctuation",
+      "severity": "low",
+      "found": "varsayılan,H0",
+      "correction": "varsayılan, H0",
+      "context": "doğru varsayılan,H0 ile gösterilen, ifadeye sıfır hipotezi (null hypothesis) denilmektedir.",
+      "explanation": "Missing space after comma before mathematical notation.",
+      "chapter": "Chapter 8: Hipotez Testleri",
+      "page_estimate": 270
+    },
+    {
+      "error_id": 22,
+      "line_number": 27225,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'deki",
+      "correction": "Örnek [number]'deki",
+      "context": "ele alalım. Bu yeni örnek uzay, deney öncesi topluluğun sadece %5'idir. Ayrıca, Örnek ??'deki\nBayes güncelleme tablosundan",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 10: Bayes Güncellemesi",
+      "page_estimate": 330
+    },
+    {
+      "error_id": 23,
+      "line_number": 27330,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'de",
+      "correction": "Örnek [number]'de",
+      "context": "c) Olayın olasılığı veya göreceli olasılığı küçük ise, O{A} ≈ Pr{A} olmaktadır. Örnek ??'de bu\ndurum açıkça görülmektedir.",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 10: Bayes Güncellemesi",
+      "page_estimate": 330
+    },
+    {
+      "error_id": 24,
+      "line_number": 27665,
+      "error_type": "punctuation",
+      "severity": "low",
+      "found": "sonra,tura",
+      "correction": "sonra, tura",
+      "context": "bulunur. Paranın tura (x = 1) geldikten sonra,tura gelmeye önyargılı olma olasılığının %50'den",
+      "explanation": "Missing space after comma.",
+      "chapter": "Chapter 10: Bayes Güncellemesi",
+      "page_estimate": 335
+    },
+    {
+      "error_id": 25,
+      "line_number": 27900,
+      "error_type": "spelling",
+      "severity": "medium",
+      "found": "buşutlar",
+      "correction": "bulutlar",
+      "context": "mayan günlerde, zamanın %25'inde sabahleyin kara buşutlar gelir.",
+      "explanation": "Turkish spelling error. Should be 'bulutlar' (clouds), not 'buşutlar'.",
+      "chapter": "Chapter 10: Bayes Güncellemesi - Problemler",
+      "page_estimate": 340
     }
   ],
   "error_summary": {
     "by_severity": {
-      "high": 7,
-      "medium": 8,
-      "low": 2
+      "high": 9,
+      "medium": 12,
+      "low": 4
     },
     "by_type": {
-      "formatting": 7,
-      "spelling": 2,
+      "formatting": 11,
+      "spelling": 3,
       "grammar": 1,
-      "punctuation": 1,
+      "punctuation": 3,
       "mathematical": 2,
-      "reference": 4,
+      "reference": 7,
       "language_consistency": 1
     },
     "by_chapter": {
