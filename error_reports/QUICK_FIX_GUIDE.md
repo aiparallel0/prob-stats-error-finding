@@ -6,9 +6,9 @@ This guide provides an actionable checklist for correcting all identified errors
 
 ## High Priority Fixes (Do First!)
 
-These errors affect content correctness, comprehension, or usability. **Total estimated time: 10 minutes**
+These errors affect content correctness, comprehension, or usability. **Total estimated time: 20 minutes**
 
-### 🔴 Critical: Mathematical Error
+### 🔴 Critical: Mathematical Errors
 
 - [ ] **Line 662** - Change `A∪B =∅` to `A∩B =∅`
   - **Find:** `A∪B =∅ ⇒ Pr{A∪B}= Pr{A}+Pr{B}`
@@ -18,7 +18,15 @@ These errors affect content correctness, comprehension, or usability. **Total es
   - **Time:** 1 minute
   - **Verification:** Check that surrounding text discusses "bağdaşmaz olaylar" (disjoint events)
 
-### 🔴 Critical: Broken Reference
+- [ ] **Line 859** - Change `Pr{A}Pr{B}Pr{B}` to `Pr{A}Pr{B}Pr{C}`
+  - **Find:** `Pr{A∩B∩C}= Pr{A}Pr{B}Pr{B}`
+  - **Replace with:** `Pr{A∩B∩C}= Pr{A}Pr{B}Pr{C}`
+  - **Why:** Critical mathematical error. Formula for three-event independence should include Pr{C}, not repeat Pr{B}
+  - **Impact:** Affects understanding of mutual independence
+  - **Time:** 1 minute
+  - **Verification:** Check equation (1.13) context about three events A, B, and C
+
+### 🔴 Critical: Broken References
 
 - [ ] **Line 579** - Replace `Örnek ??` with correct example number
   - **Find:** `Örneğin, Örnek ??'deki tura gelinceye kadar`
@@ -26,8 +34,23 @@ These errors affect content correctness, comprehension, or usability. **Total es
   - **Replace `??` with:** [Requires manual inspection to find correct example number]
   - **Why:** Makes text impossible to follow; breaks continuity
   - **Impact:** Prevents readers from understanding the example
-  - **Time:** 5 minutes (requires finding the referenced example)
+  - **Time:** 3 minutes (requires finding the referenced example)
   - **Hint:** Search for earlier examples involving "tura gelinceye kadar yapılan para atış deneyi"
+
+- [ ] **Line 18646** - Replace `Örnek ??` with correct example number in Chapter 7
+  - **Find:** `Örneğin, Örnek ??'da %95 güven seviyesinde`
+  - **Context:** Parameter estimation chapter, confidence intervals
+  - **Time:** 3 minutes
+
+- [ ] **Line 25908** - Replace `Örnek ??` with correct example number in Chapter 10
+  - **Find:** `Örnek ??'de regresyon model parametreleri`
+  - **Context:** Regression chapter
+  - **Time:** 3 minutes
+
+- [ ] **Line 27216** - Replace `Örnek ??` with correct example number in Chapter 11
+  - **Find:** `Örnek ??'de, hastalığı taşıyanlar`
+  - **Context:** Bayes analysis chapter
+  - **Time:** 3 minutes
 
 ### 🔴 High: Language Consistency
 
@@ -42,7 +65,7 @@ These errors affect content correctness, comprehension, or usability. **Total es
 
 ## Medium Priority Fixes (Do Next)
 
-These errors affect document quality and readability. **Total estimated time: 15 minutes**
+These errors affect document quality and readability. **Total estimated time: 20 minutes**
 
 ### 🟡 Formatting Error - Table of Contents
 
@@ -72,6 +95,32 @@ These errors affect document quality and readability. **Total estimated time: 15
   - **Impact:** Improves grammatical correctness
   - **Time:** 1 minute
 
+### 🟡 OCR/Formatting Errors
+
+- [ ] **Line 808** - Fix `olasılığın{ı` to `olasılığını`
+  - **Find:** `olasılığın{ı değiştirmiyorsa`
+  - **Replace with:** `olasılığını değiştirmiyorsa`
+  - **Why:** OCR error with brackets
+  - **Time:** 1 minute
+
+- [ ] **Line 809** - Fix `bağlam∣ }` to `bağlamda`
+  - **Find:** `Bu bağlam∣ }`
+  - **Replace with:** `Bu bağlamda`
+  - **Why:** OCR error with symbols
+  - **Time:** 1 minute
+
+- [ ] **Line 811** - Fix `oluşm{as∣ı v}eya` to `oluşması veya`
+  - **Find:** `oluşm{as∣ı v}eya oluşmaması`
+  - **Replace with:** `oluşması veya oluşmaması`
+  - **Why:** OCR error with brackets and symbols
+  - **Time:** 1 minute
+
+- [ ] **Line 3470** - Fix `b(ca` to `bca`
+  - **Find:** `A′ = {abc,acb,bac,b(ca,cab,cba}`
+  - **Replace with:** `A′ = {abc,acb,bac,bca,cab,cba}`
+  - **Why:** Misplaced parenthesis in set notation
+  - **Time:** 1 minute
+
 ### 🟡 Equation Formatting
 
 - [ ] **Line 799** - Fix equation number split across lines
@@ -92,9 +141,25 @@ These errors affect document quality and readability. **Total estimated time: 15
 
 ## Low Priority Fixes (Style & Polish)
 
-Minor cosmetic issues with minimal impact. **Total estimated time: 1 minute**
+Minor cosmetic issues with minimal impact. **Total estimated time: 2 minutes**
 
 ### 🟢 Punctuation
+
+- [ ] **Line 220** - Add space after comma
+  - **Find:** `bağımsız deneyler,toplam olasılık`
+  - **Replace with:** `bağımsız deneyler, toplam olasılık`
+  - **Why:** Standard Turkish punctuation requires space after commas
+  - **Impact:** Minor readability improvement
+  - **Time:** 1 minute
+
+### 🟢 English Spelling
+
+- [ ] **Line 991** - Fix `orginize` to `organize`
+  - **Find:** `to orginize`
+  - **Replace with:** `to organize`
+  - **Why:** English spelling error in diagram
+  - **Impact:** Minor spelling correction
+  - **Time:** 1 minute
 
 - [ ] **Line 220** - Add space after comma
   - **Find:** `bağımsız deneyler,toplam olasılık`
@@ -145,11 +210,12 @@ sed -i 's/deneyler,toplam/deneyler, toplam/g' "Olasılık Çözümlü Sorular.tx
 
 After making corrections, verify:
 
-- [ ] **Mathematical correctness** - Line 662 now correctly states A∩B =∅
-- [ ] **Reference resolved** - Line 579 has valid example number (not ??)
+- [ ] **Mathematical correctness** - Lines 662 and 859 now have correct formulas
+- [ ] **All references resolved** - Lines 579, 18646, 25908, 27216 have valid example numbers (not ??)
 - [ ] **Language consistency** - Line 531 uses Turkish "ise" not English "is"
-- [ ] **Spelling** - Line 264 correctly spelled as "adlandırılan"
-- [ ] **Formatting** - Lines 148 and 799 properly formatted
+- [ ] **Spelling** - Lines 264 and 991 correctly spelled
+- [ ] **OCR errors fixed** - Lines 808, 809, 811 properly formatted without brackets/symbols
+- [ ] **Formatting** - Lines 148, 799, 3470 properly formatted
 - [ ] **Punctuation** - Line 220 has space after comma
 - [ ] **Word choice** - Line 370 uses "olası" instead of "olabilir"
 
@@ -157,11 +223,12 @@ After making corrections, verify:
 
 ## Testing After Fixes
 
-1. **Visual inspection** - Scan corrected lines in context
-2. **Cross-reference check** - Verify line 579 reference is valid
-3. **Mathematical review** - Confirm line 662 axiom statement is correct
+1. **Visual inspection** - Scan all corrected lines in context
+2. **Cross-reference check** - Verify all 4 broken references are now valid
+3. **Mathematical review** - Confirm lines 662 and 859 axiom statements are correct
 4. **Spelling check** - Run Turkish spell checker if available
-5. **Full document review** - Check for similar errors in remaining sections
+5. **OCR verification** - Ensure no bracket/symbol artifacts remain
+6. **Full document review** - Check for similar errors in remaining sections
 
 ---
 
@@ -169,18 +236,18 @@ After making corrections, verify:
 
 | Priority | Errors | Est. Time | Must Fix Before |
 |----------|--------|-----------|-----------------|
-| **High** | 3 | 10 min | Publication/Distribution |
-| **Medium** | 4 | 15 min | Final review |
-| **Low** | 1 | 1 min | Polish phase |
-| **TOTAL** | 8 | 26 min | - |
+| **High** | 7 | 20 min | Publication/Distribution |
+| **Medium** | 8 | 20 min | Final review |
+| **Low** | 2 | 2 min | Polish phase |
+| **TOTAL** | 17 | 42 min | - |
 
 ---
 
 ## Special Notes
 
-### Line 662 - Mathematical Error Details
+### Lines 662 & 859 - Mathematical Error Details
 
-This is the most critical error. The axiom for the addition rule states:
+**Line 662** - This is a critical error. The axiom for the addition rule states:
 
 **Correct:** If A and B are disjoint events (A∩B = ∅), then Pr{A∪B} = Pr{A} + Pr{B}
 
@@ -191,13 +258,28 @@ This is the most critical error. The axiom for the addition rule states:
 - If both are empty, then Pr{A} = Pr{B} = 0, and the statement becomes trivial
 - The correct condition is that the INTERSECTION is empty (disjoint events)
 
-### Line 579 - Finding the Reference
+**Line 859** - This is also critical. The formula for mutual independence states:
 
-To fix the broken reference:
-1. Search backward from line 579 for examples (Örnek) involving coin flipping
-2. Look for text about "tura gelinceye kadar" (until heads)
-3. The referenced example should involve calculating probabilities for first three flips
-4. Update line 579 with the correct example number
+**Correct:** For three mutually independent events A, B, and C: Pr{A∩B∩C} = Pr{A}Pr{B}Pr{C}
+
+**Current Error:** States Pr{A}Pr{B}Pr{B}, repeating Pr{B} instead of including Pr{C}
+
+**Why it matters:** This completely changes the independence condition for three events. All three probabilities must be multiplied for the condition to hold.
+
+### Broken References - Lines 579, 18646, 25908, 27216
+
+There are 4 broken references with "??" placeholders throughout the document:
+
+1. **Line 579** - Chapter 1: Coin flipping example
+2. **Line 18646** - Chapter 7: Confidence interval example  
+3. **Line 25908** - Chapter 10: Regression parameters example
+4. **Line 27216** - Chapter 11: Bayes analysis/disease testing example
+
+To fix these:
+1. Search backward from each line for relevant examples
+2. Match the context to find the correct example number
+3. Replace "??" with the actual number
+4. Verify the reference makes sense in context
 
 ---
 
