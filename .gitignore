@@ -31,8 +31,9 @@ ENV/
 *.swp
 *.swo
 
-# Error reports
-error_reports/
+# Auto-generated error reports (exclude cloud-based analysis reports)
+error_reports/*_errors_*.json
+error_reports/*_summary_*.txt
 *.log
 
 # Temporary files

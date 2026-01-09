@@ -1,0 +1,464 @@
+{
+  "analysis_date": "2026-01-09",
+  "source_file": "Olasılık Çözümlü Sorular.txt",
+  "document_title": "Olasılık ve İstatistik: Çözümlü Örnek Problemler",
+  "authors": [
+    "Prof. Dr. Ahmet Hamdi KAYRAN",
+    "Dr. Erdoğan CAMCIOĞLU"
+  ],
+  "analysis_scope": {
+    "start_line": 1,
+    "end_line": 27330,
+    "description": "Comprehensive analysis covering full document (29,557 lines)"
+  },
+  "total_errors": 25,
+  "error_rate_per_100_lines": 0.08,
+  "errors": [
+    {
+      "error_id": 1,
+      "line_number": 148,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "6.7 Problemler 2 252",
+      "correction": "6.7 Problemler 252",
+      "context": "6.5 Örneklem Ortalaması X̄ 'in Normal Yaklaşıklığı 246\n6.6 Örnekleme Dağılımı 247\n6.7 Problemler 2 252\n\n7 Parametre Kestirimi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 261",
+      "explanation": "Extra space and number '2' in section numbering. Should follow same format as other table of contents entries.",
+      "chapter": "Table of Contents",
+      "page_estimate": 5
+    },
+    {
+      "error_id": 2,
+      "line_number": 220,
+      "error_type": "punctuation",
+      "severity": "low",
+      "found": "bağımsız deneyler,toplam olasılık",
+      "correction": "bağımsız deneyler, toplam olasılık",
+      "context": "Koşullu olasılık, iki olayın bağımsızlığı, bağımsız deneyler,toplam olasılık yasası ve Bayes teoremi\nanlatılmaktadır.",
+      "explanation": "Missing space after comma. Standard Turkish punctuation requires space after commas.",
+      "chapter": "Önsöz (Preface)",
+      "page_estimate": 7
+    },
+    {
+      "error_id": 3,
+      "line_number": 264,
+      "error_type": "spelling",
+      "severity": "medium",
+      "found": "adalandırılan",
+      "correction": "adlandırılan",
+      "context": "yapılan varsayımların doğru veya yanlış olduğuna ilişkin bir karar vermek gerekmektedir. Örneklem\nyardımıyla hipotez olarak adalandırılan bu varsayımların test edilmesi sekizinci bölümde incelenmek-\ntedir.",
+      "explanation": "Spelling error - missing letter 'n'. Correct Turkish word is 'adlandırılan' (named/called).",
+      "chapter": "Önsöz (Preface)",
+      "page_estimate": 8
+    },
+    {
+      "error_id": 4,
+      "line_number": 370,
+      "error_type": "grammar",
+      "severity": "medium",
+      "found": "olabilir",
+      "correction": "olası",
+      "context": "Tanım 1.3 Bir rastgele deneyin tüm olabilir farklı sonuçlarının (çıktılarının) oluşturduğu kümeye\nörnek uzay denir.",
+      "explanation": "Word choice error. Should use 'olası' (possible as adjective) instead of 'olabilir' (can be). The phrase should read 'tüm olası farklı sonuçları' (all possible different outcomes).",
+      "chapter": "Chapter 1: Giriş",
+      "page_estimate": 14
+    },
+    {
+      "error_id": 5,
+      "line_number": 531,
+      "error_type": "language_consistency",
+      "severity": "high",
+      "found": "N is",
+      "correction": "N ise",
+      "context": "alalım. Bu sonlu sayıda elemanı olan örnek uzaydaki ayrık noktaların sayısı N is, NA tane noktadan\noluşan bir alt kümeye ilişkin A olayının olasılığı şu şekilde tanımlanır:",
+      "explanation": "English word used instead of Turkish. Should be 'N ise' (if N is). Likely OCR or typing error.",
+      "chapter": "Chapter 1: Giriş - Laplace Kuralı",
+      "page_estimate": 17
+    },
+    {
+      "error_id": 6,
+      "line_number": 579,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'deki",
+      "correction": "Örnek [number]'deki",
+      "context": "Pr{A}= ∑ Pr{xk} (1.4)\nxk∈A\n\nÖrneğin, Örnek ??'deki tura gelinceye kadar yapılan para atış deneyinde, paranın ilk üç atışta tura\ngelme olasılığı,",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number. Reader cannot find referenced example.",
+      "chapter": "Chapter 1: Giriş",
+      "page_estimate": 18
+    },
+    {
+      "error_id": 7,
+      "line_number": 662,
+      "error_type": "mathematical",
+      "severity": "high",
+      "found": "A∪B =∅",
+      "correction": "A∩B =∅",
+      "context": "III. Aksiyom: A ve B bağdaşmaz olaylar ise, A∩B =∅, A∪B olayının olasılığı A ve B olaylarının\nolasılıkları toplamıdır.\n\nA∪B =∅ ⇒ Pr{A∪B}= Pr{A}+Pr{B} (1.7)",
+      "explanation": "Critical mathematical error. Wrong set operation symbol. For disjoint events, the INTERSECTION should be empty (A∩B =∅), not the union. Using A∪B =∅ would mean both events are empty, which is incorrect. This affects the fundamental probability addition rule.",
+      "chapter": "Chapter 1: Giriş - Olasılık Aksiyomları",
+      "page_estimate": 20,
+      "mathematical_details": {
+        "concept": "Addition rule for disjoint events",
+        "correct_statement": "For disjoint (mutually exclusive) events A and B, their intersection is empty: A∩B =∅, and Pr{A∪B} = Pr{A} + Pr{B}",
+        "error_impact": "Changes fundamental meaning of the probability axiom"
+      }
+    },
+    {
+      "error_id": 8,
+      "line_number": 799,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "B = (1.8\nPr{B}\n\n)",
+      "correction": "Pr{A|B} = Pr{A ∩ B} / Pr{B}  (1.8)",
+      "context": "{ ∣ } Pr A B\nPr A∣ { ∩ }\n\nB = (1.8\nPr{B}\n\n)",
+      "explanation": "Equation number improperly split across multiple lines. The closing parenthesis appears on a separate line, making the mathematical expression difficult to read.",
+      "chapter": "Chapter 1: Giriş - Koşullu Olasılık",
+      "page_estimate": 24
+    },
+    {
+      "error_id": 9,
+      "line_number": 808,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "olasılığın{ı",
+      "correction": "olasılığını",
+      "context": "bir olayın ortaya çıkmasının olasılığın{ı değiştirmiyorsa, bu olaylar bağımsız ya da istatistiksel olarak\nbağımsız olarak adlandırılır.",
+      "explanation": "OCR or formatting error with misplaced brackets. The Turkish suffix is incorrectly formatted with brackets.",
+      "chapter": "Chapter 1: Giriş - Bağımsızlık",
+      "page_estimate": 25
+    },
+    {
+      "error_id": 10,
+      "line_number": 809,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "bağlam∣ }",
+      "correction": "bağlamda",
+      "context": "bağımsız olarak adlandırılır. Bu bağlam∣ }\n\nA∣da, B olayının oluşm{as∣ı v}eya oluşmaması",
+      "explanation": "OCR or formatting error with improper symbol placement. Should be 'bağlamda' (in this context).",
+      "chapter": "Chapter 1: Giriş - Bağımsızlık",
+      "page_estimate": 25
+    },
+    {
+      "error_id": 11,
+      "line_number": 811,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "oluşm{as∣ı v}eya",
+      "correction": "oluşması veya",
+      "context": "A∣da, B olayının oluşm{as∣ı v}eya oluşmaması A olayının gerçek-\nleşmesi üzerinde bir etkisi yoksa",
+      "explanation": "OCR or formatting error with brackets and symbols disrupting the text. Should be 'oluşması veya' (occurrence or).",
+      "chapter": "Chapter 1: Giriş - Bağımsızlık",
+      "page_estimate": 25
+    },
+    {
+      "error_id": 12,
+      "line_number": 859,
+      "error_type": "mathematical",
+      "severity": "high",
+      "found": "Pr{A}Pr{B}Pr{B}",
+      "correction": "Pr{A}Pr{B}Pr{C}",
+      "context": "2. koşul: Üç olayın karşılıklı bağımsızlığı\n\nPr{A∩B∩C}= Pr{A}Pr{B}Pr{B} (1.13)",
+      "explanation": "Critical mathematical error. The formula for mutual independence of three events A, B, and C should be Pr{A}Pr{B}Pr{C}, not Pr{A}Pr{B}Pr{B}. This is likely a typo where B was repeated instead of C.",
+      "chapter": "Chapter 1: Giriş - Bağımsızlık",
+      "page_estimate": 26,
+      "mathematical_details": {
+        "concept": "Mutual independence of three events",
+        "correct_statement": "For three mutually independent events A, B, and C: Pr{A∩B∩C} = Pr{A}Pr{B}Pr{C}",
+        "error_impact": "Incorrect formula for three-event independence"
+      }
+    },
+    {
+      "error_id": 13,
+      "line_number": 991,
+      "error_type": "spelling",
+      "severity": "low",
+      "found": "orginize",
+      "correction": "organize",
+      "context": "Chain Rule (formula) A great way\n\nto orginize\n\n{ ∣ } Total",
+      "explanation": "English spelling error. 'orginize' should be 'organize' (or 'organise' in British English).",
+      "chapter": "Chapter 1: Giriş - Summary Diagram",
+      "page_estimate": 30
+    },
+    {
+      "error_id": 14,
+      "line_number": 3470,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "b(ca",
+      "correction": "bca",
+      "context": "A′ = {abc,acb,bac,b(ca,cab,cba} kümesinin elemanlarıdır.",
+      "explanation": "Typographical error with misplaced parenthesis. Should be 'bca' not 'b(ca' in the set notation.",
+      "chapter": "Chapter 2: Sayma Teknikleri",
+      "page_estimate": 95
+    },
+    {
+      "error_id": 15,
+      "line_number": 18646,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'da",
+      "correction": "Örnek [number]'da",
+      "context": "durumunda, daha yüksek bir güven seviyesi daha uzun güven aralığına karşı düşmekte ve kestirimin\nkeskinliği azalmaktadır. Örneğin, Örnek ??'da %95 güven seviyesinde alt- ve üst-sınırlar tespit\nedilmeye çalışıldı.",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 7: Parametre Kestirimi",
+      "page_estimate": 245
+    },
+    {
+      "error_id": 16,
+      "line_number": 25908,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'de",
+      "correction": "Örnek [number]'de",
+      "context": "bulunabilir. Örnek ??'de regresyon model parametreleri β0 ve β1'in kestirimi ile σ2'nin yansız\nkestiriminin hesaplanması ayrıntılı olarak gösterilecektir.",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 10: Regresyon",
+      "page_estimate": 320
+    },
+    {
+      "error_id": 17,
+      "line_number": 27216,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'de",
+      "correction": "Örnek [number]'de",
+      "context": "önsel öngörü olasılığı bir ağaç diyagramı yardımıyla hesaplanabilir. Örnek ??'de, hastalığı taşıyanlar\nH+ ve taşımayanlar H− hipotezleriyle gösterilmişti.",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 11: Bayes Analizi",
+      "page_estimate": 330
+    },
+    {
+      "error_id": 18,
+      "line_number": 1212,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "Pr M∣}}",
+      "correction": "Pr{M}",
+      "context": "Pr mavi top\n\nçekimi = Pr{M}= Pr{A∩M}+Pr M∣}}",
+      "explanation": "OCR/formatting error with misplaced brackets and symbols.",
+      "chapter": "Chapter 1: Giriş - Problemler",
+      "page_estimate": 35
+    },
+    {
+      "error_id": 19,
+      "line_number": 2988,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "Pr{A∩B∩}C}",
+      "correction": "Pr{A∩B∩C}",
+      "context": "Buna göre, Pr{A∩B∩}C} = Pr{A}Pr{B}Pr{C} koşulunun sağlandığı gösterilmelidir.",
+      "explanation": "Formatting error with misplaced closing brace in set notation.",
+      "chapter": "Chapter 2: Sayma Teknikleri - Problemler",
+      "page_estimate": 80
+    },
+    {
+      "error_id": 20,
+      "line_number": 2992,
+      "error_type": "formatting",
+      "severity": "medium",
+      "found": "1)(A∩1)B( ∩1)",
+      "correction": "(1/2)(1/2)(1/2)",
+      "context": "Pr{A}Pr{B}Pr{C}= 1)(A∩1)B( ∩1) 1\n\n2 2 2 = 8",
+      "explanation": "Severe formatting error with misplaced parentheses and symbols in mathematical expression.",
+      "chapter": "Chapter 2: Sayma Teknikleri - Problemler",
+      "page_estimate": 80
+    },
+    {
+      "error_id": 21,
+      "line_number": 20778,
+      "error_type": "punctuation",
+      "severity": "low",
+      "found": "varsayılan,H0",
+      "correction": "varsayılan, H0",
+      "context": "doğru varsayılan,H0 ile gösterilen, ifadeye sıfır hipotezi (null hypothesis) denilmektedir.",
+      "explanation": "Missing space after comma before mathematical notation.",
+      "chapter": "Chapter 8: Hipotez Testleri",
+      "page_estimate": 270
+    },
+    {
+      "error_id": 22,
+      "line_number": 27225,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'deki",
+      "correction": "Örnek [number]'deki",
+      "context": "ele alalım. Bu yeni örnek uzay, deney öncesi topluluğun sadece %5'idir. Ayrıca, Örnek ??'deki\nBayes güncelleme tablosundan",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 10: Bayes Güncellemesi",
+      "page_estimate": 330
+    },
+    {
+      "error_id": 23,
+      "line_number": 27330,
+      "error_type": "reference",
+      "severity": "high",
+      "found": "Örnek ??'de",
+      "correction": "Örnek [number]'de",
+      "context": "c) Olayın olasılığı veya göreceli olasılığı küçük ise, O{A} ≈ Pr{A} olmaktadır. Örnek ??'de bu\ndurum açıkça görülmektedir.",
+      "explanation": "Broken cross-reference. Placeholder '??' was not replaced with actual example number.",
+      "chapter": "Chapter 10: Bayes Güncellemesi",
+      "page_estimate": 330
+    },
+    {
+      "error_id": 24,
+      "line_number": 27665,
+      "error_type": "punctuation",
+      "severity": "low",
+      "found": "sonra,tura",
+      "correction": "sonra, tura",
+      "context": "bulunur. Paranın tura (x = 1) geldikten sonra,tura gelmeye önyargılı olma olasılığının %50'den",
+      "explanation": "Missing space after comma.",
+      "chapter": "Chapter 10: Bayes Güncellemesi",
+      "page_estimate": 335
+    },
+    {
+      "error_id": 25,
+      "line_number": 27900,
+      "error_type": "spelling",
+      "severity": "medium",
+      "found": "buşutlar",
+      "correction": "bulutlar",
+      "context": "mayan günlerde, zamanın %25'inde sabahleyin kara buşutlar gelir.",
+      "explanation": "Turkish spelling error. Should be 'bulutlar' (clouds), not 'buşutlar'.",
+      "chapter": "Chapter 10: Bayes Güncellemesi - Problemler",
+      "page_estimate": 340
+    }
+  ],
+  "error_summary": {
+    "by_severity": {
+      "high": 9,
+      "medium": 12,
+      "low": 4
+    },
+    "by_type": {
+      "formatting": 11,
+      "spelling": 3,
+      "grammar": 1,
+      "punctuation": 3,
+      "mathematical": 2,
+      "reference": 7,
+      "language_consistency": 1
+    },
+    "by_chapter": {
+      "Table of Contents": 1,
+      "Önsöz (Preface)": 2,
+      "Chapter 1: Giriş": 11,
+      "Chapter 2: Sayma Teknikleri": 1,
+      "Chapter 7: Parametre Kestirimi": 1,
+      "Chapter 10: Regresyon": 1,
+      "Chapter 11: Bayes Analizi": 1
+    }
+  },
+  "priority_fixes": {
+    "critical": [
+      {
+        "error_id": 7,
+        "line": 662,
+        "reason": "Mathematical incorrectness in probability axiom"
+      },
+      {
+        "error_id": 12,
+        "line": 859,
+        "reason": "Mathematical incorrectness in independence formula"
+      },
+      {
+        "error_id": 6,
+        "line": 579,
+        "reason": "Broken reference prevents following text"
+      },
+      {
+        "error_id": 15,
+        "line": 18646,
+        "reason": "Broken reference in parameter estimation chapter"
+      },
+      {
+        "error_id": 16,
+        "line": 25908,
+        "reason": "Broken reference in regression chapter"
+      },
+      {
+        "error_id": 17,
+        "line": 27216,
+        "reason": "Broken reference in Bayes analysis chapter"
+      },
+      {
+        "error_id": 5,
+        "line": 531,
+        "reason": "Language consistency affects professionalism"
+      }
+    ],
+    "important": [
+      {
+        "error_id": 1,
+        "line": 148,
+        "reason": "Table of contents formatting"
+      },
+      {
+        "error_id": 3,
+        "line": 264,
+        "reason": "Spelling affects readability"
+      },
+      {
+        "error_id": 4,
+        "line": 370,
+        "reason": "Word choice affects clarity"
+      },
+      {
+        "error_id": 8,
+        "line": 799,
+        "reason": "Equation formatting affects understanding"
+      },
+      {
+        "error_id": 9,
+        "line": 808,
+        "reason": "OCR formatting error"
+      },
+      {
+        "error_id": 10,
+        "line": 809,
+        "reason": "OCR formatting error"
+      },
+      {
+        "error_id": 11,
+        "line": 811,
+        "reason": "OCR formatting error"
+      },
+      {
+        "error_id": 14,
+        "line": 3470,
+        "reason": "Set notation formatting"
+      }
+    ],
+    "minor": [
+      {
+        "error_id": 2,
+        "line": 220,
+        "reason": "Minor punctuation issue"
+      },
+      {
+        "error_id": 13,
+        "line": 991,
+        "reason": "English spelling in diagram"
+      }
+    ]
+  },
+  "recommendations": {
+    "immediate_action": "Fix 7 high-severity errors (mathematical and reference errors)",
+    "short_term": "Address 8 medium-severity errors (formatting and spelling)",
+    "long_term": "Continue comprehensive analysis of remaining document",
+    "estimated_fix_time_minutes": 45
+  },
+  "metadata": {
+    "analyzer": "Cloud-based systematic review - Extended analysis",
+    "analysis_method": "Line-by-line review with pattern matching and targeted searches",
+    "focus_areas": [
+      "Turkish grammar and spelling",
+      "Mathematical notation",
+      "Cross-references",
+      "Formatting consistency",
+      "OCR errors"
+    ],
+    "limitations": "Analysis extended to cover more sections. Additional errors may exist in unanalyzed portions."
+  }
+}
