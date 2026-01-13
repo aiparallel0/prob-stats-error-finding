@@ -1,0 +1,797 @@
+﻿İTÜ MAT 1 0 4 E 2 5 B F FINAL EXAM June 16, 2025
+
+Notice: This exam consists of 20 questions. The raw 4. Which of the following is the slope of the tangent line
+score is calculated by subtracting one-fourth of the number π
+
+to the polar curve r = 1− 2 cos θ at the point θ = ?
+of incorrect answers from the number of correct answers. 2
+Mobile phones, smart watches, earphones, calculators and (a) −2
+other electronic devices must remain turned off and must 3
+not be on or near you during the exam. Violation of this (b) −
+
+2
+will result in cancellation of your exam even if there is
+
+(c) −1
+no suspicion of cheating. Coats, bags, pencil cases and
+
+1
+similar items must not be placed on the desks. (d) −
+
+2
+(e) 0
+
+1. Fill in the blank with the best fit:
+
+In multivariable calculus, a(n)
+derivative refers to the derivative of a 5. Which of the following is the distance from the point
+function of several variables with respect (2, 2, 3) to the plane through the points (0, 0, 0),
+to one variable, keeping the others (2, 0,−1) and (2,−1, 0) ?
+constant.
+
+(a) 1
+(a) directional
+
+(b) 2
+(b) higher order
+
+(c) 3
+(c) implicit
+
+(d) 4
+(d) partial
+
+(e) 5
+(e) total
+
+( ) 6. If the equation(x
+2−2y+z3+xeyz−z cos y = 0 defines
+
+2. Which of the following is true for the sequence whose z as a differentiable funct)io∣
+∂z ∂z ∣n of independent variables
+
+1
+xn n
+
+nth term is an = , for all x > 0 ? x and y, then + ∣ =?
+2n+ 1 ∂x ∂y ∣
+
+(0,0,1)
+
+(a) It diverges. (a) −1
+(b) It converges to 0.
+
+(b) −1
+
+(c) It converges to 1. 2
+(c) 0
+
+1
+(d) It converges to .
+
+x 1
+(d)
+
+(e) It converges to x. 2
+(e) 1
+
+3. W∑hich of the following is true for the series
+∞ ( ) 7. Which of the following parametric equations gives the
+
+3 + sin2 1
+
+√ n
+5 ? line tangent to the curve of intersection of the surfaces
+
+n=3 n− 2 xyz = 6 and x2 + y2 + z2 = 14 at (1, 2, 3) ? (t ∈ R)
+
+(a) It converges by the nth-Term Test. (a) x = 1 + t , y = 2 + 2t , z = 3 + 3t
+
+(b) It diverges by the nth-Term Test. (b) x = 1 + 10t , y = 2 + 32t , z = 3 + 18t
+
+(c) It diverges by the Direct Comparison Test. (c) x = 1 + 10t , y = 2− 32t , z = 3 + 18t
+
+(d) It converges by the Direct Comparison Test. (d) x = 1− t , y = 2 + 2t , z = 3− 3t
+
+(e) It diverges by the Ratio Test. (e) x = 1− 10t , y = 2 + 32t , z = 3 + 18t
+
+ITU MAT104E25BF — 1
+
+
+
+∫ √
+4 ∫8. Which of the following is true for the function y
+
+f(x, y) = x3 + y3 + 3x2 − 3y2 − 12. xy2dxdy =?
+9x ? 0 0
+
+(a) (−3, 0) is a local maximum point. (a) 16
+
+(b) (−3, 2) is a local maximum point. (b) 32
+
+(c) (1, 2) is a saddle point. (c) 48
+
+(d) (−3, 0) is a local minimum point. (d) 64
+
+(e) (−3, 2) is a local minimum point. (e) 80
+
+9. Which of the following is the absolute minimum value
+of the function f(x, y) = x2 + y2 − 2x − 4y on the
+triangular region bounded by x = 0, y = 3 and y = x?
+
+13. ∫Whi
+2 ∫ch of the following is the equivalent integral to
+
+(a) −9 2
+x2
+
+√
+(b) − y dy dx with the order of integration
+
+8 −2 x2−2
+
+(c) −7 reversed∫? 2 ∫
+(d) − 2
+
+5 (a) y2
+√
+
+∫ 2 ∫ x dx dy
+(e) −4 −2 x2−2
+
+x2−2
+y2
+√
+
+(b) ∫ x dx dy
+−2 2
+
+2 ∫ √
+y+2
+
+10. Which of the following is true for the maximum and (c) 2√
+√ x y dx dy
+
+minimum values of the function f(x, y, z) = y2 − 10z ∫−2 − y+2
+
+on the sphere x2 + y2 + z2 = 36 ? √
+2 ∫ y+2 √
+
+maximum value minimum value (d) x2∫ y dx dy
+0
+0 ∫0
+
+(a) 36 −39 0 √
+(e) 2
+
+√ x y dx dy
+(b) 60 −61 −2 − y+2
+
+(c) 60 −60
+
+(d) 61 −61
+
+(e) 61 −60
+
+14. Which of the following double integrals evaluates the
+11. Fill in the blanks with the best fit: area of the region bounded by the curve y = 1 + ex,
+
+the line∫y = 1 +
+1+e4 ∫ e4 and the y−axis in the plane?
+
+coordinates represent a point P in
+by ordered triples (ρ, ϕ, θ) in which ln(y−1)
+
+(a) ∫ dx dy
+ρ is the dista−n−→ce from P to the origin, ϕ
+
+1 0
+is the angle OP makes with the positive 1+e4 ∫ ln(y)−1
+z−axis, θ is the angle from cylindrical (b) ∫ dx dy
+coordinates. 2 0
+
+1+e4 ∫ 4
+
+(a) Cylindrical, plane (c) ∫ dx dy
+2 0
+
+(b) Cylindrical, space 1+e4 ∫ ln(y−1)
+
+(c) Polar, plane (d) ∫ dx dy
+2 0
+
+(d) Spherical, plane 1+e4 ∫ ln(y)−1
+(e) dx dy
+
+(e) Spherical, space 1 0
+
+ITU MAT104E25BF — 2
+
+
+
+15. Which of the following double integrals in polar 18. Which of the following integrals in spherical
+coordinates gives the area of the region that lies inside coordinates gives the volume of the solid bounded
+the circl∫e r =
+
+π ∫ 2 cos θ and outside the circle r = 1 ? below by the plane z = 1 and above by the sphere
+x2 + y2∫+ z22 cos θ
+
+3
+(a) ∫ rdrdθ
+
+0 1
+π ∫ √
+
+2π ∫= 2
+π∫? 2
+4
+
+(a) ∫ ρ2 sinϕ dρ dϕ dθ
+2 cos θ
+
+3 0 0 1
+(b) ∫0 ∫ drdθ
+
+2π ∫ π∫ 2
+1 4
+
+(b) ρ2π sinϕ dρ dϕ dθ
+2 cos θ
+
+4 0 0 1
+
+(c) rdrdθ cosϕ
+
+∫−π
+4 ∫1 ∫ √
+
+2π ∫ π∫ 2
+4
+
+π 2 cos θ (c) ρ2 sinϕ dρ dϕ dθ
+3 ∫0 ∫0 1
+
+(d) rdrdθ cosϕ
+
+∫−π 1
+3
+π ∫ √
+
+2π π∫ 2
+2
+
+2 cos θ
+3 (d) ρ2 sinϕ dρ dϕ dθ
+
+(e) drdθ ∫0 π 1
+4 cos
+
+−π 1
+3 2π ∫ π∫ ϕ
+
+2
+2
+
+(e) ρ2 sinϕ dρ dϕ dθ
+0 π 1
+
+4 cosϕ
+
+16. Which of the following triple integrals gives the volume
+of the region between the cylinders z = x2 + 1 and
+z = −x2 that are bounded by the planes x = −1, ∫∫
+
+19. Evaluate the integral (x2x = 2, y∫= 0
+
+2 ∫ an
+
+1 ∫d y = 1 ? + y2) dx dy over the
+
+R
+x2
+
+(a) ∫ (x2
+region R : x2 + y2 ≤ 4.
+
++ 1) dz dy dx
+1
+
+2 ∫0 1 ∫0 (Hint: You may switch to polar coordinates.)
+x2+1
+
+(b) (a) π
+
+∫ dz dx dy
+−1 0 −x2
+
+1 ∫ 2 ∫ (b) 2π
+x2+1
+
+(c) ∫ dz dx dy (c) 4π
+0
+
+(d) 6π
+2 ∫−1
+
+1 ∫0x2+1
+(d) ∫ dz dy dx (e) 8π
+
+−1
+
+2 ∫01 ∫0x2+1
+(e) dz dy dx
+
+−1 0 −x2 20. ∫Whi
+2 ∫ch of the following is obtained when the integral
+
+2 y
+dy dx is converted to an integral in the
+
+1 1 x
+17. Let D be a solid bounded above by z = 4−x2−y2 and uv−plan∫e b2 ∫y using the transformation x = u, y = uv?
+
+b∫el∫ow∫ by z = x2+y2. Which of the following integrals 2
+u
+
+in cylindrical coordinates is equivalent to the integral (a) v dv du
+
+∫1 1
+u
+
+(x2 + y2
+3
+) 2 dV ?
+
+2 ∫ 2
+u
+
+D ∫ 2π∫ √
+2∫ (b) uv dv du
+
+∫1 1
+
+4−r2 u
+
+(a) ∫ r4 2 ∫dz dr dθ 2u
+
+0 0 r2
+
+2π∫ (c) ∫ uv dv du
+√ 1 u
+2∫ 4−r2
+
+(b) r3 2 ∫ 1 ∫ 2 ∫ 2
+u
+
+∫ dz dr dθ
+0
+
+2π∫0√2∫r2 (d) uv dv du+ uv dv du
+
+∫1 ∫ 1 ∫ 1 1
+4−r 2 u
+
+(c) r4∫ dz dr dθ 2 1 2 ∫ 2
+
+0 0 r
+
+2π∫ 2∫
+u
+
+(e) uv dv du+ uv dv du
+4−r2 1 1 1 1
+
+2
+
+(d) ∫ r3 dz dr dθ
+0
+
+2π∫02∫r24−r2
+
+(e) r4 dz dr dθ
+0 0 0
+
+ITU MAT104E25BF — 3
+
+
+
+Answers
+
+1. (d) 11. (e)
+
+2. (e) 12. (b)
+
+3. (c)
+13. (c)
+
+4. (a)
+14. (d)
+
+5. (d)
+15. (d)
+
+6. (d)
+16. (e)
+
+7. (c)
+
+17. (a)
+
+8. (a)
+
+18. (c)
+
+9. (d)
+
+19. (e)
+
+10. (e)
+
+20. (b)
+
+ITU MAT104E25BF — 1
+
+
+
+İTÜ MAT 1 0 4 T 2 5 B F YARIYIL SONU SINAVI 16 Haziran 2025
+
+Uyarı: Bu sınav 20 sorudan oluşmaktadır. Ham puan, 4. Aşağıdakilerden hangisi r = 1 − 2 cos θ kutupsal
+π
+
+doğru yanıt sayısından yanlış yanıt sayısının dörtte eğrisinin θ = noktasındaki teğetinin eğimidir?
+birinin çıkarılmasıyla hesaplanır. Cep telefonları, akıllı 2
+
+saatler, kulaklıklar, hesap makineleri ve diğer elektronik (a) −2
+cihazlar sınav sırasında kapalı kalmalı ve üzerinizde veya
+
+(b) −3
+yakınınızda olmamalıdır. Bunun ihlali, kopya şüphesi 2
+olmasa bile sınavınızın iptal edilmesine neden olacaktır. (c) −1
+Mont, çanta, kalem kutusu ve benzeri eşyalar sıraların
+üzerine konulmamalıdır. (d) −1
+
+2
+(e) 0
+
+1. Boşluğu en uygun olanla doldurunuz:
+
+Çok değişkenli analizde, türev(i)
+birden fazla değişkenli fonksiyonun diğer 5. Aşağıdakilerden hangisi (2, 2, 3) noktasının (0, 0, 0),
+değişkenlerini sabit tutarak bir değişkene (2, 0,−1) ve (2,−1, 0) noktalarından geçen düzleme
+göre türevinin alınmasını ifade eder. olan uzaklığıdır?
+
+(a) doğrultu (a) 1
+
+(b) yüksek mertebeden (b) 2
+
+(c) kapalı (c) 3
+
+(d) kısmi (d) 4
+
+(e) toplam (e) 5
+
+( ) 1 6. x2 − 2y + z3 + xeyz − z cos y = 0 denklemi z’yi x ve y
+xn n
+
+2. Her x > 0 için genel terimi an = olan dizi bağımsız değişkenler(inin türevl)en∣
+∂z ∂z ∣ebilir bir fonksiyonu
+
+2n+ 1
+için hangisi doğrudur? olarak tanımlıyorsa + ∣ = ?
+
+∂x ∂y ∣
+(0,0,1)
+
+(a) Iraksar.
+(a) −1
+
+(b) 0 ’a yakınsar.
+(b) −1
+
+(c) 1 ’e yakınsar. 2
+1 (c) 0
+
+(d) ’e yakınsar.
+x 1
+
+(d)
+(e) x ’e yakınsar. 2
+
+(e) 1
+
+∑∞ ( )
+3 + sin2 1
+
+3. √ n
+5 serisi için hangisi doğrudur? 7. Aşağıdaki parametrik denklemlerden hangisi xyz = 6
+
+n=3 n− 2 ve x2 + y2 + z2 = 14 yüzeylerinin arakesit eğrisine
+(1, 2, 3) ’te teğet olan doğruyu verir? (t ∈ R)
+
+(a) n. Terim Testi’ne göre yakınsar.
+
+(b) n. Terim Testi’ne göre ıraksar. (a) x = 1 + t , y = 2 + 2t , z = 3 + 3t
+
+(c) Doğrudan Karşılaştırma Testi’ne göre ıraksar. (b) x = 1 + 10t , y = 2 + 32t , z = 3 + 18t
+
+(d) Doğrudan Karşılaştırma Testi’ne göre (c) x = 1 + 10t , y = 2− 32t , z = 3 + 18t
+
+yakınsar. (d) x = 1− t , y = 2 + 2t , z = 3− 3t
+
+(e) Oran Testi’ne göre ıraksar. (e) x = 1− 10t , y = 2 + 32t , z = 3 + 18t
+
+ITU MAT104T25BF — 1
+
+
+
+∫ √
+8. f(x, y) = x3 + y3 + 3x2 − 3y2 − 9x fonksiyonu için 4 ∫ y
+
+12. xy2dxdy = ?
+aşağıdakilerden hangisi doğrudur? 0 0
+
+(a) (−3, 0) yerel maksimum noktasıdır. (a) 16
+
+(b) (−3, 2) yerel maksimum noktasıdır. (b) 32
+
+(c) (1, 2) eyer noktasıdır. (c) 48
+
+(d) (−3, 0) yerel minimum noktasıdır. (d) 64
+
+(e) (−3, 2) yerel minimum noktasıdır. (e) 80
+
+9. Aşağıdakilerden hangisi f(x, y) = x2 + y2 − 2x − 4y
+fonksiyonunun x = 0, y = 3 ve y = x ile sınırlanan
+üçgensel bölgedeki mutlak minimum değeridir?
+
+13. İ∫nteg2 ∫rasyon sırası değiştirildiğinde hangisi
+(a) −9 2
+
+(b) − x2
+√
+y dy dx integraline denk olur?
+
+8 −2 x2−
+(c) −7 ∫2 2 ∫ 2
+
+(d) −5 (a y2
+√
+
+) ∫ x dx dy
+−2 x2−2
+
+(e) −4 2 ∫ x2−2
+(b) y2
+
+√
+
+∫ x dx dy
+−2 2
+
+2 ∫ √
+y+2 √
+
+(c) √ x2 y dx dy
+10. f(x, y, z) = y2 − 10z fonksiyonunun x2 + y2 + z2 = 36 ∫−2 − y+2
+
+√
+küresi üzerindeki maksimum ve minimum değerleri 2 ∫ y+2 √
+için aşağıdakilerden hangisi doğrudur? (d) x2∫ y dx dy
+
+maksimum değer minimum değer 0 0
+0 ∫ 0 √
+
+(a) 36 − (e) √ x2 y dx dy
+39 −2 − y+2
+
+(b) 60 −61
+
+(c) 60 −60
+
+(d) 61 −61
+
+(e) 61 −60
+
+14. Düzlemde y = 1 + ex eğrisi, y = 1 + e4 doğrusu ve
+y−ekseni ile sınırlandırılmış bölgenin alanını veren iki
+
+11. Boşlukları en uygun olanlarla doldurunuz: katlı int∫egral a1+e4 ∫şağıdakilerden hangisidir?
+
+koordinatlar bir P n ln(y−1)
+−−o→ktasını (a) ∫ dx dy
+
+ρ, P ’den orijine uzaklık; ϕ, OP ’nin 1 0
+pozitif z−ekseni ile yaptığı açı; θ, silindirik 1+e4 ∫ ln(y)−1
+koordinatlardaki açı olmak üzere, sıralı (b) ∫ dx dy
+(ρ, ϕ, θ) üçlüleri ile temsil eder. 2 0
+
+1+e4 ∫ 4
+
+(a) Silindirik, düzlemde (c) ∫ dx dy
+2 0
+
+(b) Silindirik, uzayda 1+e4 ∫ ln(y−1)
+
+(c) Kutupsal, düzlemde (d) ∫ dx dy
+2 0
+
+(d) Küresel, düzlemde 1+e4 ∫ ln(y)−1
+(e) dx dy
+
+(e) Küresel, uzayda 1 0
+
+ITU MAT104T25BF — 2
+
+
+
+15. Kutupsal koordinatlarda verilmiş aşağıdaki iki katlı 18. Küresel koordinatlarda verilmiş aşağıdaki
+integrallerden hangisi r = 2 cos θ çemberi içinde ve integrallerden hangisi, alttan z = 1 düzlemi ve
+r = 1 çe∫mbe
+
+π ∫ri dışında kalan bölgenin alanını verir? üstten x2 + y2 + z2 = 2 küresi ile sınırlanan cismin
+hacmini∫veri √
+
+2π ∫r?2 cos θ
+3
+
+(a) ∫ rdrdθ
+0 1
+
+π ∫ π∫ 2
+4
+
+(a) ∫ ρ2 sinϕ dρ dϕ dθ
+2 cos θ
+
+3 0 0 1
+(b) ∫0 ∫ drdθ 2π ∫ π∫ 2
+
+4
+1 (b) ρ2 sinϕ dρ dϕ dθ
+
+π 2 cos θ 0 0 1
+4 cosϕ
+
+(c) rdrdθ ∫ √
+
+∫−π
+4 ∫ 2π ∫ π∫
+
+1 2
+4
+
+π (c) ρ2 sinϕ dρ dϕ dθ
+2 cos θ
+
+3 ∫0 ∫0 1
+
+(d) rdrdθ cosϕ
+
+∫ √
+−π 1 2π π∫ 2
+
+3 2
+π ∫ 2 cos θ (d) ρ2 sinϕ dρ dϕ dθ
+3
+
+(e) drdθ ∫0 π 1
+4 cos
+
+2π ∫ π∫ ϕ
+
+−π 1
+3 2
+
+2
+(e) ρ2 sinϕ dρ dϕ dθ
+
+0 π 1
+4 cosϕ
+
+16. Aşağıdaki üç katlı integrallerden hangisi x = −1,
+x = 2, y = 0 ve y = 1 düzlemleriyle sınırlanmış ∫∫
+z = x2 + 1 ve z = −x2 silindirleri arasında kalan ( )
+
+19. R : x2 + y2 ≤ 4 bölgesi üzerinde x2 + y2 dx dy
+bölgenin∫ha2 ∫cmi
+
+1 ∫ni verir? R
+x2 integralini hesaplayınız.
+
+(a) ∫ (x2 + 1) dz dy dx
+1
+
+2 ∫ (Yol gösterme: Kutupsal koordinatlara geçebilirsiniz.)
+0
+
+1 ∫0 x2+1 (a) π
+(b) ∫ dz dx dy
+
+−1 0 −x2
+
+1 ∫ 2 ∫ (b) 2π
+x2+1 (c) 4π
+
+(c) ∫ dz dx dy
+0
+
+2 ∫−1
+
+1 ∫0 (d) 6π
+x2+1 (e) 8π
+
+(d) ∫ dz dy dx
+−1
+
+2 ∫01 ∫0x2+1
+(e) dz dy dx ∫ 2 ∫ 2 y
+
+−1 0 −x2 20. dy dx integrali x = u, y = uv dönüşümü
+1 1 x
+
+kullanılarak uv−düzleminde bir integrale
+dönüştü∫rüld2 ∫üğünde aşağıdakilerden hangisi elde edilir?
+
+17. Üstten z = 4− x2 − y2 ve alttan z∫=∫∫x
+2 + y2 ile sınırlı
+
+2
+cisim D olsun. Silindirik koordinatlarda verilmiş u
+
+aşağıdaki integrallerden hangisi (x2 + y2
+3 (a) v dv du
+) 2 dV ∫1 1
+
+u
+
+D 2 ∫ 2
+u
+
+integral∫ine d∫enk∫tir? (b) uv dv du
+√ ∫1 1
+
+2π 2 4−r2
+u
+
+2 ∫(a) ∫0 ∫ r4 dz dr dθ 2u
+
+0 r2
+√
+
+2π 2∫ (c) ∫ uv dv du
+1 u
+
+4−r2
+
+(b) r3 2 ∫ 1 ∫ 2 ∫
+∫ dz dr dθ 2
+
+u
+
+0 ∫0 r2 (d) uv dv du+ uv dv du
+√ ∫1 ∫ 1 ∫ 1 1
+
+2π 2∫ 4−r 2 u
+
+2 1 2 ∫ 2
+(c) r4∫ dz dr dθ
+
+0 0 r
+
+2π∫ 2∫
+u
+
+(e) uv dv du+ uv dv du
+4−r2 1 1 1 1
+
+2
+
+(d) r3∫ dz dr dθ
+0
+
+2π∫02∫r24−r2
+
+(e) r4 dz dr dθ
+0 0 0
+
+ITU MAT104T25BF — 3
